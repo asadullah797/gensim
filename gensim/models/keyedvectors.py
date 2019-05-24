@@ -776,7 +776,7 @@ class WordEmbeddingsKeyedVectors(BaseKeyedVectors):
         # Compute WMD.
         return emd(d1, d2, distance_matrix)
 
-    def wmdistance_with_PIPloss(self, document1, document2):
+    def wmdistance_pip(self, document1, document2):
         """Compute the Word Mover's Distance between two documents along with PIP loss.
         When using this code, please consider citing the following papers:
         * `Ofir Pele and Michael Werman "A linear time histogram metric for improved SIFT matching"
